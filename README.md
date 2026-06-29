@@ -444,3 +444,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsI...
 | **try/catch** | Captura errores para devolver una respuesta controlada en lugar de romper el servidor. |
 | **singleton** | Patrón que garantiza que solo existe una instancia de un objeto (el cliente Supabase). |
 | **dotenv** | Librería que carga las variables del archivo `.env` en `process.env`. |
+# caja-arequipa-backend
