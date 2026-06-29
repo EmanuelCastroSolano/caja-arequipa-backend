@@ -10,7 +10,7 @@ const app = express();
 
 // 2. Configurar CORS para permitir que React (puerto 5173) se conecte y envíe credenciales
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://caja-arequipa-frontend.vercel.app',
   credentials: true
 })); // <-- MODIFICADO: CORS configurado para aceptar tu frontend
 
