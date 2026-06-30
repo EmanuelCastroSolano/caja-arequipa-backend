@@ -8,7 +8,13 @@ const creditoRoutes = require('./src/routes/creditoRoutes'); // <-- NUEVO: Impor
 
 const app = express();
 
-// 2. Configurar CORS para permitir que React (puerto 5173) se conecte y envíe credenciales
+// ==============================================================
+// PARCHE DE SEGURIDAD PARA RECONOCIMIENTO DE IP EN RENDER (Ataque 4)
+// ==============================================================
+app.set('trust proxy', 1); 
+// ==============================================================
+
+// 2. Configurar CORS para permitir que React se conecte y envíe credenciales
 app.use(cors({
   origin: 'https://caja-arequipa-frontend.vercel.app',
   credentials: true
